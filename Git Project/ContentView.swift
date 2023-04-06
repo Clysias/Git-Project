@@ -18,8 +18,8 @@ struct ContentView: View {
             .sheet(isPresented: $isPresent) {
                 ModalView()
             }
+            .navigationBarTitle("Xcode and Git")
         }
-        .navigationBarTitle("Xcode and Git")
     }
 }
 
