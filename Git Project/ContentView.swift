@@ -11,12 +11,8 @@ struct ContentView: View {
     @State private var isPresent = false
     var body: some View {
         NavigationView {
-            Button("Show modal") {
-                isPresent.toggle()
-            }
-            .foregroundColor(.red)
-            .sheet(isPresented: $isPresent) {
-                ModalView()
+            NavigationLink(destination: ModalView()) {
+                Text("Go Next")
             }
             .navigationBarTitle("Xcode and Git")
         }
